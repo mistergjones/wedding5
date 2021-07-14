@@ -1,0 +1,122 @@
+.rsvp {
+    grid-area: rsvp;
+
+    background-image: url("./screenshot.png");
+    background-size: cover;
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /*Resize the background image to cover the entire container*/
+
+    border: 3px solid blue;
+    position: relative;
+}
+
+<form id="form">
+<h2>Before We Do</h2>
+
+<h3>Friday February 4th, 2022 Five O'Clock</h3>
+<div className="alignment-options">
+    <div className="left-alignment">
+        <input
+            type="radio"
+            name="drinksYesNo"
+            id="drinksYesNo"
+        />
+        <label htmlFor="drinksYesNo">
+            we will see you there
+        </label>
+
+        <br></br>
+        <input
+            type="text"
+            name="numDrinkAdullts"
+            id="numDrinkAdullts"
+            size="1"
+        />
+        <label htmlFor="numDrinkAdullts">
+            number of adults
+        </label>
+
+        <br></br>
+        <input
+            type="text"
+            name="numDrinkChildren"
+            id="numDrinkChildren"
+            size="1"
+        />
+        <label htmlFor="numDrinkChildren">
+            number of children
+        </label>
+
+        <br />
+        <input
+            type="radio"
+            name="drinksYesNo"
+            id="drinksYesNo"
+        />
+        <label htmlFor="drinksYesNo">
+            we'll be there in spirit
+        </label>
+    </div>
+</div>
+<hr className="horizontal-line"></hr>
+<h2>We Do</h2>
+<h3>Sunday February 6th, 2022 Three O'Clock</h3>
+<div className="alignment-options">
+    <div className="left-alignment">
+        {/* <div className="shape-container">
+            <div className="heart"></div>
+            <p>heart</p>
+        </div> */}
+        <input
+            type="radio"
+            name="weddingYesNo"
+            id="weddingYesNo"
+        />
+        <label htmlFor="weddingYesNo">
+            we will see you there
+        </label>
+
+        <br></br>
+        <input
+            type="text"
+            name="numWeddingAdults"
+            id="numWeddingAdults"
+            size="1"
+        />
+        <label htmlFor="numWeddingAdults">
+            number of adults
+        </label>
+        <br></br>
+
+        <input
+            type="radio"
+            name="weddingYesNo"
+            id="weddingYesNo"
+        />
+        <label htmlFor="weddingYesNo">
+            we'll be there is spirit
+        </label>
+    </div>
+</div>
+<div className="alignment-options">
+    <input
+        type="text"
+        name="from_names"
+        id="from_names"
+        placeholder="e.g. Ben and Jen"
+        required
+    ></input>
+    <label htmlFor="from_names">
+        Your name(s) please
+    </label>
+    <br></br>
+    <input
+        type="submit"
+        id="button"
+        value="RSVP"
+    ></input>
+</div>
+</form>

@@ -1,0 +1,276 @@
+:root {
+    --purple: #615087;
+    --peach: #ffd5cd;
+    --pink: #efbbcf;
+    --lilac: #c3aed6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Parisienne', cursive; */
+
+h2 {
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+label {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.pageContainer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.form-container {
+    /* margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "rsvp wedding";
+    font-family: "Noto Sans", sans-serif; */
+
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px 5px lightgray;
+    display: grid;
+    grid-template-columns: 0.55fr 0.2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "rsvp border top-half";
+}
+
+.beforewedo {
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px 5px lightgray;
+}
+
+.beforewedo img {
+    width: 100%;
+    height: auto;
+}
+
+.fullrsvp {
+    position: relative;
+}
+
+.glen {
+    position: absolute;
+    top: 27.9%;
+    left: 48.75%;
+    transform: translate(-50%, -50%);
+}
+
+.sen {
+    position: absolute;
+    top: 32.9%;
+    left: 48.8%;
+    transform: translate(-50%, -50%);
+}
+
+.den {
+    position: absolute;
+    top: 37.7%;
+    left: 48.8%;
+    transform: translate(-50%, -50%);
+}
+
+.ben {
+    position: absolute;
+    top: 42.7%;
+    left: 48.75%;
+    transform: translate(-50%, -50%);
+}
+
+.ren {
+    position: absolute;
+    top: 70.7%;
+    left: 48.75%;
+    transform: translate(-50%, -50%);
+}
+.tren {
+    position: absolute;
+    top: 75.2%;
+    left: 48.75%;
+    transform: translate(-50%, -50%);
+}
+
+input::placeholder {
+    color: black;
+    font-style: italic;
+}
+
+.gen {
+    position: absolute;
+    top: 80.7%;
+    left: 48.75%;
+    transform: translate(-50%, -50%);
+}
+
+.zen {
+    position: absolute;
+    top: 65.7%;
+    left: 14.75%;
+    transform: translate(-50%, -50%);
+}
+
+.ten {
+    margin-top: 1rem;
+    display: block;
+
+    font-family: "Great Vibes", cursive;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    /* text-align: center; */
+    /* font-size: 1rem; */
+    position: absolute;
+    top: 72.7%;
+    left: 14.75%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="radio"]:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    background-color: black;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    /* border: 2px solid white; */
+}
+
+input:focus,
+text:focus,
+select:focus {
+    outline: none;
+    border: none;
+}
+
+.rsvp {
+    grid-area: rsvp;
+    /* border: 3px solid blue; */
+    position: relative;
+}
+
+.rsvp img {
+    /* border: 3px solid red; */
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.border {
+    grid-area: border;
+    background: linear-gradient(#000, #000) no-repeat center/2px 75%;
+}
+
+.top-half {
+    grid-area: top-half;
+    text-align: center;
+    /* border: 3px solid red; */
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.form-alignment {
+}
+
+.alignment-options {
+    /* border: 3px solid brown; */
+    text-align: center;
+    margin-top: 0px;
+}
+.left-alignment {
+    /* border: 3px solid purple; */
+    display: inline-block;
+    text-align: left;
+    margin: 1rem;
+}
+
+.left-alignment label {
+    padding-left: 1rem;
+}
+
+.borderHorizontal {
+    grid-area: borderHorizontal;
+    border-top: 2px solid black;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    /* display: block; */
+    padding: 6px 30px;
+    font-family: "Great Vibes", cursive;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        background: white;
+    }
+
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "rsvp"
+            "top-half";
+        font-family: "Noto Sans", sans-serif;
+
+        position: absolute;
+    }
+
+    .rsvp {
+        grid-area: rsvp;
+
+        border: 3px solid blue;
+    }
+
+    .rsvp img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .top-half {
+        grid-area: top-half;
+        border: 3px solid blue;
+    }
+}
