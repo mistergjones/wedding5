@@ -20,7 +20,7 @@ const SaveTheDate = () => {
 
                 <div className="beforewedo">
                     <div className="fullrsvp">
-                        <img src="screenshot.png" alt="" />
+                        <img src="ScreenShot.png" alt="" />
                         <input
                             className="glen"
                             type="radio"
