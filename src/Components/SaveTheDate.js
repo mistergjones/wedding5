@@ -2,97 +2,28 @@ import React from "react";
 import "./SaveTheDate.css";
 import EmailJSForm from "./EmailJSForm";
 
+import BeforeWeDo from "../images/BeforeWeDo.jpg";
+import WeDo from "../images/WeDo.jpg";
+import QuestCheltenham from "../images/QuestCheltenham.jpg";
+
 const SaveTheDate = () => {
     return (
         <>
             <div className="pageContainer">
                 <div className="beforewedo">
-                    <img src="BeforeWeDo.jpg" alt="" />
+                    <img src={BeforeWeDo} alt="" />
                 </div>
 
                 <div className="beforewedo">
-                    <img src="WeDo.jpg" alt="" />
+                    <img src={WeDo} alt="" />
                 </div>
 
                 <div className="beforewedo">
-                    <img src="QuestCheltenham.jpg" alt="" />
+                    <img src={QuestCheltenham} alt="" />
                 </div>
 
-                <div className="beforewedo">
-                    <div className="fullrsvp">
-                        <img src="ScreenShot.png" alt="" />
-                        <input
-                            className="glen"
-                            type="radio"
-                            name="drinksYesNo"
-                            id="drinksYesNo1"
-                            value="Yes - we will attend the drinking session"
-                        />
-                        <input
-                            className="sen"
-                            type="text"
-                            name="numDrinkAdullts"
-                            id="numDrinkAdullts"
-                            size="1"
-                            maxlength="1"
-                        />
-                        <input
-                            className="den"
-                            type="text"
-                            name="numDrinkChildren"
-                            id="numDrinkChildren"
-                            size="1"
-                            maxlength="1"
-                        />
-                        <input
-                            className="ben"
-                            type="radio"
-                            name="drinksYesNo"
-                            id="drinksYesNo2"
-                            value="We will not attend the drinking session"
-                        />
-
-                        <input
-                            className="ren"
-                            type="radio"
-                            name="weddingYesNo"
-                            id="weddingYesNo1"
-                            value="Yes - will attend the wedding"
-                        />
-
-                        <input
-                            className="tren"
-                            type="text"
-                            name="numWeddingAdults"
-                            id="numWeddingAdults"
-                            size="1"
-                            maxlength="1"
-                        />
-
-                        <input
-                            className="gen"
-                            type="radio"
-                            name="weddingYesNo"
-                            id="weddingYesNo2"
-                            value="No - will not attend the wedding"
-                        />
-
-                        <input
-                            className="zen"
-                            type="text"
-                            name=""
-                            id=""
-                            placeholder="Your names please:"
-                            size="19"
-                        />
-
-                        <input
-                            className="ten"
-                            type="submit"
-                            id="button"
-                            value="RSVP"
-                        ></input>
-                    </div>
+                <div>
+                    <EmailJSForm />
                 </div>
 
                 {/* <div className="form-container">
